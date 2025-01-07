@@ -505,7 +505,7 @@ endif
 
 report_conf = configuration_data()
 report_conf.set('GLIB_VERSION', glib_version)
-report_conf.set('PYTHON', python.full_path())
+report_conf.set('PYTHON', '/usr/bin/env python3')
 configure_file(
   input: 'gtester-report.in',
   output: 'gtester-report',
