@@ -87,7 +87,7 @@ python_tools = [
 
 python_tools_conf = configuration_data()
 python_tools_conf.set('VERSION', glib_version)
-python_tools_conf.set('PYTHON', python.full_path())
+python_tools_conf.set('PYTHON', '/usr/bin/env python3')
 
 foreach tool: python_tools
   tool_bin = configure_file(
